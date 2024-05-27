@@ -1,0 +1,11 @@
+
+{
+    "HRM_TC_10": {
+      "username": "Admin",
+      "password": "admin123"
+    },
+    "search": {
+      "query": "Selenium WebDriver"
+    }
+  }
+  
