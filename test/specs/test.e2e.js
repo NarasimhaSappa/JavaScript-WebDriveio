@@ -38,16 +38,17 @@ describe('Orange HRM Login Application Test Cases', () => {
         await console.log("Verified Sucessfully logined HRM Application")
         await allureReporter.addStep("Verified Sucessfully logined HRM Application")
     })
-    it('HRM_TC_004:Verify my info Dash board', async () => {
+    it.only('HRM_TC_004:Verify my info Dash board', async () => {
         AllureReporter.addFeature("OrangeHRM")
         await browser.pause(4000)
         await LoginPage.openUrl()
         await browser.maximizeWindow()
         await LoginPage.OrangeHrmFunction('Admin','admin123')
-        await console.log("Sucessfully logined HRM Application")
         await allureReporter.addStep("Login into HRM application")
-        await LoginPage.myInformationDetails('Sappa','Narasimha','Murthy')
+        await console.log("Sucessfully logined HRM Application")
+        await LoginPage.myInformationDetails('Sappa','Narasimha','Murthy')  
         
+       
     })
 
 
