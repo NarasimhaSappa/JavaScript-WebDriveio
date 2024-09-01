@@ -1,0 +1,10 @@
+.........Console Logs.........
+
+Opened Admin Url
+Entered Username
+Entered Password
+click on login button
+Sucessfully logined HRM Application
+Verified first name field
+Verified middle name field
+Verified Last name field

@@ -1,0 +1,10 @@
+{
+    "workbench.colorCustomizations": {},
+    "workbench.editor.decorations.colors": true,
+    "workbench.preferredDarkColorTheme": "Visual Studio Light",
+    "workbench.preferredHighContrastColorTheme": "Visual Studio Light",
+    "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
+    "workbench.editor.autoLockGroups": {
+        "terminalEditor": false
+    }
+}

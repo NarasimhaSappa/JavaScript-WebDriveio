@@ -60,6 +60,10 @@ class LoginPage extends Page {
         return $('//input[@class="oxd-input oxd-input--active orangehrm-lastname"]');
     }
 
+    get employIdField() {
+        return $('//input[@class="oxd-input oxd-input--active"]');
+    }
+
 //This method for loading element time wait
     async browserWaitUntillLoadingInprogress(){
         await console.log("Wait until loading in progress")
@@ -73,15 +77,11 @@ class LoginPage extends Page {
         }
         await browser.pause(5000)
     }
-
-
-
     async login (username, password) {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
     }
-
 
     async openUrl(){
     await browser.url("https://opensource-demo.orangehrmlive.com/")
@@ -124,14 +124,25 @@ class LoginPage extends Page {
         await await this.myInfoFirstName.clearValue()
         await this.myInfoFirstName.setValue(firstName)
         await AllureReporter.addStep("Please Enter First name")
+        await console.log("Verified first name field")
+
         await browser.pause(2000)        
         await this.myInfoMiddleName.clearValue();
         await this.myInfoMiddleName.setValue(middleName)
         await AllureReporter.addStep("Please Enter Middle name")
+        await console.log("Verified middle name field")
+
         await browser.pause(2000)        
         await this.myInfoLastName.clearValue();
         await this.myInfoLastName.setValue(lastName)
         await AllureReporter.addStep("Please Enter Last name")
+        await console.log("Verified Last name field")
+        await this.employIdField.getText();
+        await console("Verified Employ field"+employIdField)
+        
+        
+    
+        
 
     }
 

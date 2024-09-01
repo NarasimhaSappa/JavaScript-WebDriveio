@@ -1,0 +1,7 @@
+.........Console Logs.........
+
+Opened Admin Url
+Entered Username
+Entered Password
+click on login button
+Sucessfully logined HRM Application
